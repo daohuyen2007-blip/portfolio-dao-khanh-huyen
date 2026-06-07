@@ -32,6 +32,7 @@ body {
   color: var(--ink);
   background: #111116;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 body::before,
@@ -189,10 +190,12 @@ img {
 .page-title {
   margin: 0;
   color: #fff;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.1rem, 8.2vw, 7.4rem);
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: clamp(2.7rem, 6.4vw, 5.9rem);
   font-weight: 900;
-  line-height: 0.94;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
   text-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
 
@@ -200,6 +203,7 @@ img {
   display: block;
   margin-top: 8px;
   color: var(--rose);
+  font-size: 0.92em;
   font-style: italic;
 }
 
@@ -640,7 +644,7 @@ img {
 
   .hero h1,
   .page-title {
-    font-size: clamp(3rem, 16vw, 4.8rem);
+    font-size: clamp(2.45rem, 12vw, 3.9rem);
   }
 
   .subtitle {
@@ -667,4 +671,3 @@ img {
     width: 100%;
   }
 }
-
